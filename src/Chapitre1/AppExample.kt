@@ -27,12 +27,12 @@ fun main () {
      println("This is line runds no matter what ")
 
     println("--------if as an 'expression'---------------------")
+
+
     /*
     Et quand on utilise "if" as an expression , ca doit etre suivi de "else"
-    * */
-    println( if(z>y) "z is greater than y " else "z n'est pas superieur a y"  )
+    */
 
-
-
+    println( if(z>y) "z is greater than y " else "z n'est pas superieur a y" )
 
 }

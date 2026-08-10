@@ -96,4 +96,13 @@ fun main () {
     }
 
 
+    // "For" Loop : It runs over a range of values or items
+
+      // 1. downTo
+
+    for (bb in 15 downTo 10) println(bb)
+    for (bw in 1.. 7 step 2 ) println(bw)
+
+
+
 }
