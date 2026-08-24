@@ -1,0 +1,67 @@
+package Chapter8NullsAndExceptions
+
+class Wolf () {
+
+
+    var hunger = 10
+    val food = "meat"
+
+    fun eat () {
+
+        println("The Wolf is eating $food")
+    }
+
+}
+
+
+class MyWolf () {
+
+    var wolf : Wolf? = Wolf()
+
+    fun myFunction () {
+
+        wolf?.eat()
+    }
+}
+
+fun getAlphaWolf() : Wolf? {
+
+    return Wolf()
+}
+
+fun main () {
+
+    var w : Wolf? = Wolf()
+
+    if ( w != null ) {
+
+        w.eat()
+    }
+
+    var x = w?.hunger
+    println("The value of x is $x")
+
+    var y = w?.hunger ?: -1 /*
+    ?: is called the elvis operator. it's there to set y to the vcalue of hunger if w is not null.
+    if w is null , it sets y to -1
+    */
+    println("The value of y is $y")
+
+    var myWolf = MyWolf()
+
+    myWolf?.wolf?.hunger = 8
+    println("The value of myWolf?.wolf?.hunger is ${myWolf?.wolf?.hunger} ")
+
+
+    var myArray = arrayOf("Hi","Hello",null)
+
+    for (item in myArray) {
+
+        item?.let { println(it) } // This prints the non-null items in tha Array
+    }
+
+    getAlphaWolf()?.let {it.eat()}
+
+    w = null
+    // var z = w!!.hunger // This will throw a NullPointerException as w is null
+}
