@@ -42,7 +42,7 @@ fun main () {
     println("The value of x is $x")
 
     var y = w?.hunger ?: -1 /*
-    ?: is called the elvis operator. it's there to set y to the vcalue of hunger if w is not null.
+    ?: is called the elvis operator. it's there to set y to the value of hunger if w is not null.
     if w is null , it sets y to -1
     */
     println("The value of y is $y")

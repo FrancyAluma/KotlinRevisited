@@ -10,7 +10,7 @@ fun main () {
 
     y = y + 2
 
-    println("The value of x is $y")
+    println("The value of y is $y")
 
     val name = "Francy Aluma "
     println(name )

@@ -57,7 +57,7 @@ class Hippo : Animal() {
 open class Canine : Animal () {
 
     override fun roam() {
-        println("The Canoine is Roaming")
+        println("The Canine is Roaming")
     }
 }
 

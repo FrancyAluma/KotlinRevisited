@@ -11,7 +11,7 @@ enum class BandMembres (
 
     val instrument : String
 ) {
-                            Jerry ("lead guitar") {
+    Jerry ("lead guitar") {
                                 override fun sings(): String = "plaintively"
                             },
     Bobby("rhythm guitar") {

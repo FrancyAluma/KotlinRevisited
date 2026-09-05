@@ -3,7 +3,7 @@ package Chapitre2BasicTypesEtVariables
 fun main () {
 
     /*
-    You can think of an array as being like a tray of cups , wher each item
+    You can think of an array as being like a tray of cups , where each item
     in the array is a variable
      */
     val myArray = arrayOf(1,"fhjdj",8)

@@ -21,7 +21,7 @@ fun getUserChoice ( optionsParam : Array<String> ) : String  {
     var isValidChoice = false
     var userChoice = ""
 
-    // Loop untile the user enters a valid choice
+    // Loop until the user enters a valid choice
 
     while (
         !isValidChoice
